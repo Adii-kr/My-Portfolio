@@ -1,0 +1,112 @@
+/* ------------------------------------------------------------------------------- */
+/* TABLET & SMALLER DESKTOP STYLES */
+
+@media (max-width: 1024px) {
+  .home-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-repo-link {
+    margin-top: 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 0 0.75rem;
+  }
+
+  .footer-links a:hover {
+    transform: none; /* Disable horizontal shift on mobile */
+  }
+
+  .footer-social {
+    align-items: center;
+  }
+}
+
+/* ------------------------------------------------------------------------------- */
+/* MOBILE & TABLET STYLES */
+
+@media (max-width: 1061px) {
+  .nav-links {
+    position: absolute;
+    top: 100%; /* Position it right below the header */
+    left: 0;
+    right: 0;
+    background: rgba(243, 243, 243, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
+    display: flex;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr; /* Stack contact cards */
+  }
+
+  .footer {
+    padding: 3rem 1rem 1.5rem;
+  }
+}
+
+/* ------------------------------------------------------------------------------- */
+/* SMALL MOBILE STYLES */
+
+@media (max-width: 425px) {
+  .hero-repo-link {
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+
+  .back-to-top-btn {
+    width: 40px;
+    height: 40px;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .back-to-top-btn i {
+    font-size: 1.2rem;
+  }
+}
