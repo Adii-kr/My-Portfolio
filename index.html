@@ -3,396 +3,277 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Aditya Kumar</title>
-    <meta
-      name="description"
-      content="Aditya Kumar — Computer Science student, Frontend Developer, and Java & DSA learner from Greater Noida, Uttar Pradesh. Skilled in Java, DSA, HTML, CSS, JavaScript, and MySQL. Passionate about building scalable, user-focused web applications."
-    />
-    <meta
-      name="keywords"
-      content="Aditya Kumar, Frontend Developer, Java Developer, DSA Learner, Computer Science Student, Web Developer Greater Noida, Java Programmer, HTML CSS JavaScript Developer, Codveda Technologies Intern, DevOps Enthusiast"
-    />
-    <meta
-      property="og:title"
-      content="Aditya Kumar | Frontend Developer & Java Programmer"
-    />
-    <meta
-      property="og:description"
-      content="Frontend Developer & Java Programmer passionate about building scalable, user-focused applications using Java, DSA, HTML, CSS, and modern web technologies."
-    />
-    <meta
-      property="og:image"
-      content="https://yourdomain.com/preview-image.jpg"
-    />
-    <meta property="og:url" content="https://yourdomain.com" />
-    <meta name="twitter:card" content="summary_large_image" />
-
+    <link rel="shortcut icon" type="image/x-icon" href="src/hostel.png" />
+    <title>LAKH Hostel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="/src/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
   </head>
 
   <body>
-    <header class="header">
-      <nav class="navbar flex">
-        <a href="#home" class="logo">Aditya Kumar</a>
-        <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#project">Projects</a>
-          <a href="#certificate">Certificates</a>
-          <a href="#contact">Contact</a>
-          <a
-            href="https://github.com/ADI-7065"
-            target="_blank"
-            aria-label="GitHub Profile"
-            ><i class="fa-brands fa-github github-icon"></i
-          ></a>
-          <a
-            href="/src/Aditya_Kumar_Java_FullStack_Resume.pdf"
-            class="resume-link"
-            download="Aditya_Kumar_Java_FullStack_Resume.pdf"
-            >Resume</a
-          >
+    <header>
+      <!-- Notice Bar -->
+      <div class="notice-bar">
+        <div class="notice-track">
+          <p>
+            🌍 Stay, Connect, Explore! 🛏️ ✨ Hostels are your gateway to
+            budget-friendly stays, shared adventures, and friendships from
+            around the globe! ✈️
+          </p>
         </div>
-        <button
-          id="menu-btn"
-          class="fas fa-bars"
-          aria-label="Open menu"
-        ></button>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav>
+        <div class="logo">
+          <h1><a href="index.html">LAKH Hostel</a></h1>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="nav-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+          <ul class="nav-actions">
+            <li><a href="Login.html" class="btn-signin">Sign In</a></li>
+            <li><a href="Admin.html" class="btn-admin">Admin</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section class="home container" id="home">
-        <div class="row home-content">
-          <div class="hero-left">
-            <div class="hero-text">
-              <h1>Hi, I'm Aditya Kumar</h1>
-              <h2>Frontend Developer & Java Programmer from Greater Noida</h2>
-              <h3>
-                Let's collaborate to turn ideas into scalable, high-performance
-                solutions.
-              </h3>
-              <p>
-                I'm a Computer Science student passionate about building
-                meaningful digital experiences. Skilled in Java, DSA, HTML, CSS,
-                JavaScript, ReactJs and MySQL, I develop responsive,
-                user-friendly applications. Currently exploring AI, Machine
-                Learning, Deep Learning, and Prompt Engineering to work smarter,
-                boost productivity, and create innovative, future-ready
-                solutions.
-              </p>
-              <a
-                href="#about"
-                class="scroll-down-arrow"
-                aria-label="Scroll to About section"
-              >
-                <i class="fa-solid fa-arrow-down fa-bounce"></i>
-              </a>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1>Spacious Hostel Rooms</h1>
+          <p>With a Comfortable and Hygienic Environment</p>
+          <a href="#contact" class="btn-primary">Enquire Now</a>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <div class="service-grid">
+            <div class="service-card">
+              <img src="src/security.jpg" alt="24/7 Security" loading="lazy" />
+              <h3>24/7 Security</h3>
             </div>
-          </div>
-          <div class="hero-right">
-            <a
-              href="https://github.com/ADI-7065"
-              target="_blank"
-              class="hero-repo-link"
-            >
-              Watch My Repo
-            </a>
+            <div class="service-card">
+              <img src="src/wifi.jpg" alt="High-Speed WiFi" loading="lazy" />
+              <h3>High-Speed WiFi</h3>
+            </div>
+            <div class="service-card">
+              <img src="src/canteen.jpg" alt="Delicious Canteen" loading="lazy" />
+              <h3>Delicious Canteen</h3>
+            </div>
+            <div class="service-card">
+              <img
+                src="src/electrical-supply.jpg"
+                alt="24/7 electrical supply"
+                loading="lazy"
+              />
+              <h3>24/7 Electrical Supply</h3>
+            </div>
+            <div class="service-card">
+              <img src="src/furniture.jpg" alt="fully Furniture Room" loading="lazy" />
+              <h3>fully Furniture Room</h3>
+            </div>
+            <div class="service-card">
+              <img src="src/balcony.jpg" alt="Balcony" loading="lazy" />
+              <h3>Balcony</h3>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="about container" id="about">
-        <div class="about-content">
-          <h2 class="section-title">About Me</h2>
-          <h3 class="section-subtitle">
-            Frontend Developer & Java Programmer | Full-Stack Enthusiast
-          </h3>
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=400&auto=format&fit=crop"
+                alt="Hostel Room 1"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1586105251261-72a756497a11?q=80&w=400&auto=format&fit=crop"
+                alt="Hostel Room 2"
+                loading="lazy"
+              />
+            </div>
+            <div class="gallery-item">
+              <img src="src/room1.jpg" alt="Hostel Room 3" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="src/room2.jpg" alt="Hostel Room 4" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="src/room3.jpg" alt="Hostel Room 5" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="src/room4.jpg" alt="Hostel Room 6" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2>About Us</h2>
           <p>
-            I'm a Computer Science student driven by a passion for creating
-            impactful digital solutions. With strong skills in Java, Data
-            Structures & Algorithms (DSA), HTML, CSS, JavaScript, ReactJs and
-            MySQL, I specialize in building responsive, user-friendly
-            applications that merge performance with clean design.
-            <br />Lately, I've been expanding my expertise in Artificial
-            Intelligence, Machine Learning, Deep Learning, and Prompt
-            Engineering, exploring how these technologies can make development
-            smarter, faster, and more creative. My focus is on enhancing
-            productivity, solving problems efficiently, and integrating
-            intelligent features into projects — all with the goal of delivering
-            innovative, future-ready solutions.
+            <strong>LAKH Hostel</strong>, located in Malad West, offers
+            pocket-friendly stays with all essential amenities.
+          </p>
+          <p>
+            Step into a world where adventure meets connection! Join a vibrant
+            community of travelers from every corner of the globe. Enjoy cozy,
+            budget-friendly stays, soak in the lively social vibe, and create
+            unforgettable memories with like-minded explorers. Your journey
+            starts here—let's make it extraordinary!
           </p>
         </div>
       </section>
 
-      <section class="skills container" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <h3 class="section-subtitle">
-          Tech Stack & Tools I <span>Specialize</span> In
-        </h3>
-        <div class="skills-grid">
-          <i class="fa-brands fa-java" title="Java"></i>
-          <i class="fa-brands fa-python" title="Python"></i>
-          <i class="fa-brands fa-js" title="JavaScript"></i>
-          <i class="fa-brands fa-html5" title="HTML5"></i>
-          <i class="fa-brands fa-react" title="React"></i>
-          <i class="fa-brands fa-css3-alt" title="CSS3"></i>
-          <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
-          <i class="fa-brands fa-github" title="GitHub"></i>
-        </div>
-      </section>
-
-      <section class="project container" id="project">
-        <div class="project-header">
-          <h2 class="section-title">My Projects</h2>
-          <h3 class="section-subtitle">
-            Crafted with <span>Purpose</span> — Designing & Developing
-            real-world, scalable applications.
-          </h3>
-        </div>
-        <div class="project-grid">
-          <a href="#" target="_blank" class="project-item">
-            <img
-              src="/src/project/project 1.png"
-              alt="Salon WebSite using Bootstrap"
-            />
-            <div class="overlay-text">Salon WebSite using Bootstrap</div>
-          </a>
-          <a href="#" target="_blank" class="project-item">
-            <img
-              src="/src/project/project 2.png"
-              alt="Real-Time ChatApp using Socket.IO"
-            />
-            <div class="overlay-text">Real-Time ChatApp using Socket.IO</div>
-          </a>
-          <a href="https://lakhhotel.netlify.app/" target="_blank" class="project-item">
-            <img
-              src="/src/project/project 3.png"
-              alt="Hostal WebSite using HTML CSS JavaScript"
-            />
-            <div class="overlay-text">
-              Hostal WebSite using HTML CSS JavaScript
+      <section class="testimonials">
+        <div class="container">
+          <h2>What Our Guests Say</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <blockquote>
+                "I stayed in their hostel for almost 7 months, and they provided
+                excellent service with a clean and friendly environment. Highly
+                recommend it!"
+              </blockquote>
+              <cite>— Aditya Kumar</cite>
             </div>
-          </a>
-          <a href="#" target="_blank" class="project-item">
-            <img
-              src="/src/project/project 4.png"
-              alt="Car Game using HTML CSS JavaScript"
-            />
-            <div class="overlay-text">Car Game using HTML CSS JavaScript</div>
-          </a>
-        </div>
-      </section>
-
-      <section class="certificate container" id="certificate">
-        <div class="certificate-header">
-          <h2 class="section-title">My Certificates</h2>
-          <h3 class="section-subtitle">
-            Validating My Skills & <span>Knowledge</span> — A collection of my
-            professional certifications.
-          </h3>
-        </div>
-        <div class="certificate-grid">
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 1.png"
-              alt="Java Programming Certificate from Incapp"
-            />
-            <div class="overlay-text">Java Programming</div>
-          </a>
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 2.png"
-              alt="Data Structure & Algorithms with Java Certificate from Incapp"
-            />
-            <div class="overlay-text">
-              Data Structure & Algorithms with Java
+            <div class="testimonial-card">
+              <blockquote>
+                "A fantastic place to meet new people while exploring the city.
+                The staff is welcoming, and the WiFi is super fast!"
+              </blockquote>
+              <cite>— Shreen</cite>
             </div>
-          </a>
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 3.png"
-              alt="Web Development Certificate from Incapp"
-            />
-            <div class="overlay-text">Web Development</div>
-          </a>
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 4.png"
-              alt="React JS Certificate from Incapp"
-            />
-            <div class="overlay-text">React JS</div>
-          </a>
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 5.png"
-              alt="AutoDesk AutoCAD Certificate"
-            />
-            <div class="overlay-text">AutoDesk AutoCAD</div>
-          </a>
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 6.jpg"
-              alt="AI/ML IIT Delhi Hackathon"
-            />
-            <div class="overlay-text">AI/ML IIT Delhi Hackathon</div>
-          </a>
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 7.png"
-              alt="Adobe Hackathon"
-            />
-            <div class="overlay-text">Adobe Hackathon</div> </a
-          ><br />
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 8.jpeg"
-              alt="AWS amazon Certificate"
-            />
-            <div class="overlay-text">Data Analytics on AWS from Amazon</div>
-          </a>
-          <a href="#" target="_blank" class="certificate-item">
-            <img
-              src="/src/certificates/certificate 9.png"
-              alt="LLM Google Certificate"
-            />
-            <div class="overlay-text">Intoduction to LLM from Google</div>
-          </a>
-        </div>
-      </section>
-
-      <section class="contact container" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>My Address</h3>
-            <p>Kulesra Greater Noida, UP, 201306</p>
-          </div>
-          <div class="contact-card">
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/adityakumar-fullstack/"
-                class="linkedin"
-                target="_blank"
-                aria-label="LinkedIn"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-
-              <a
-                href="https://www.instagram.com/aditya_may_16/"
-                class="instagram"
-                target="_blank"
-                aria-label="Instagram"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a
-                href="https://x.com/kumar_adit64273?s=11"
-                class="twitter"
-                target="_blank"
-                aria-label="Twitter"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
+            <div class="testimonial-card">
+              <blockquote>
+                "Affordable, safe, and comfortable. LAKH Hostel made my stay in
+                Mumbai memorable with their amazing services and social vibe."
+              </blockquote>
+              <cite>— Rohan Mehta</cite>
             </div>
           </div>
-          <div class="contact-card">
-            <h3>My Email</h3>
-            <p>
-              <a href="mailto:adityakr7065@gmail.com">Adityakr7065@gmail.com</a>
-            </p>
-          </div>
-          <div class="contact-card">
-            <h3>Contact No</h3>
-            <p><a href="tel:7065868929">+91 7065868929</a></p>
-          </div>
-        </div>
-        <div class="whatsapp-chat">
-          <a
-            aria-label="Chat on WhatsApp"
-            href="https://wa.me/917065868929"
-            target="_blank"
-          >
-            <img
-              src="https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png"
-              alt="WhatsApp Chat Icon"
-            />
-          </a>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-about">
-          <h3>Aditya Kumar 😁</h3>
+    <footer id="contact">
+      <div class="footer-top">
+        <a href="#home">Back to Top</a>
+      </div>
+      <div class="footer-main container">
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>📍 Kandivali (East), Maharashtra, India 400101</p>
+          <p>📞 Phone: <a href="tel:+917065868929">+91 7065868929</a></p>
           <p>
-            Designing and developing real-world, scalable web applications from
-            front to back.
+            📧 Email:
+            <a href="mailto:info@lakhhostel.com">info@lakhhostel.com</a>
           </p>
         </div>
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#project">Projects</a>
-          <a href="#certificate">Certificates</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
         </div>
-        <div class="footer-social">
-          <a
-            href="https://github.com/ADI-7065"
-            target="_blank"
-            aria-label="GitHub Profile"
-            ><i class="fa-brands fa-github github-icon"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/adityakumar-fullstack/"
-            target="_blank"
-            aria-label="LinkedIn"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/aditya_may_16/"
-            class="instagram"
-            target="_blank"
-            aria-label="Instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a
-            href="https://x.com/kumar_adit64273?s=11"
-            target="_blank"
-            aria-label="Twitter"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/aditya_may_16/"
+                >📸 Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/adityakumar-fullstack/"
+                >📘 LinkedIn</a
+              >
+            </li>
+            <li><a href="https://x.com/kumar_adit64273?s=11">🐦 Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Hostel Rules</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>
-          Created with ❤️ By
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/adityakumar-fullstack/"
-            >Aditya Kumar</a
-          >
-        </p>
-        <p>&copy; 2025 Aditya Kumar. All Rights Reserved.</p>
+        <div class="copyright">
+          <p>
+            Created with ❤️ By
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/adityakumar-fullstack/"
+              >Aditya Kumar</a
+            >
+          </p>
+          <p>&copy; 2024 Aditya Kumar. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
 
-    <button class="back-to-top-btn">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navContainer = document.querySelector(".nav-container");
+
+      function toggleMenu() {
+        hamburger.classList.toggle("active");
+        navContainer.classList.toggle("active");
+      }
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navContainer.classList.remove("active");
+        });
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+          }
+        });
+      });
+    </script>
   </body>
-  <script src="script.js"></script>
 </html>
